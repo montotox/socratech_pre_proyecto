@@ -1,0 +1,22 @@
+@import "../../scss/index.scss";
+.header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.1);
+    &-newtask {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        &_input {
+            width: 90%;
+            max-width: 600px;
+        }
+    }
+}

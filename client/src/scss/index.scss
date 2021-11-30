@@ -1,0 +1,46 @@
+@import "./mediaquerie.scss";
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #dddddd;
+}
+.tasks {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.card {
+  // background-image: url("../assets/images/background.png");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_text {
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}
+.finish {
+  text-decoration: line-through;
+  color: #c4c4c4;
+}
+
+.MuiCardContent-root:last-child {
+  padding-bottom: 16px !important;
+}
+.MuiButton-contained {
+  background-color: #f06161 !important;
+  color: #ffffff !important;
+}
+@media screen and(max-width: $breakpoint-phone) {
+  .tasks {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
